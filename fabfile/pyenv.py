@@ -5,7 +5,6 @@ import yum
 
 env.pyenv_root = '/opt/pyenv'
 
-@task
 def install():
   yum.install('git')
   pyenv_root = env.pyenv_root

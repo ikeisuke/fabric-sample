@@ -8,7 +8,6 @@ env.plugins = {
   'ruby-build': 'https://github.com/sstephenson/ruby-build.git'
 }
 
-@task
 def install():
   yum.install('git')
   rbenv_root = env.rbenv_root
