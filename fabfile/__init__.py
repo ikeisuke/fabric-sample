@@ -5,6 +5,8 @@ from fabric.api import env
 from fabric.decorators import task
 
 env.disable_known_hosts = True
+env.connection_attempts = 5
+env.timeout             = 60
 
 @task
 def version():
